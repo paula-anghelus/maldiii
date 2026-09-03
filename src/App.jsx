@@ -9,7 +9,7 @@ function App() {
   const [tabel, setTabel] = useState([]);
 
   useEffect(() => {
-  fetch("http://localhost:3000/reguli")
+  fetch(`${import.meta.env.VITE_API_URL}/reguli`)
     .then((response) => response.json())
     .then((data) => setTabel(data));
 }, []);
