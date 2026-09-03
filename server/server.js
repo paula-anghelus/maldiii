@@ -326,6 +326,4 @@ app.put("/reguli", async (req, res) => {
 // PORNIRE SERVER
 // ====================
 
-app.listen(PORT, () => {
-  console.log(`Server pornit pe portul ${PORT}`);
-});
+export default app;
