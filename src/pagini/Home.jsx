@@ -11,13 +11,13 @@ function Home({ tabel }) {
   const [probe, setProbe] = useState([]);
 
   useEffect(() => {
-  fetch("http://localhost:3000/bacterii")
+  fetch(`${import.meta.env.VITE_API_URL}/bacterii`)
     .then((response) => response.json())
     .then((data) =>
       setBacterii(data.sort((a, b) => a.localeCompare(b)))
     );
 
-  fetch("http://localhost:3000/probe")
+  fetch(`${import.meta.env.VITE_API_URL}/probe`)
     .then((response) => response.json())
     .then((data) =>
       setProbe(data.sort((a, b) => a.localeCompare(b)))
