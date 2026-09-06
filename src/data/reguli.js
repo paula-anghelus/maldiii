@@ -6,8 +6,8 @@ const reguli = [
 
 const carduri = [
     "GN 427",
+    "GN 437",
     "GN 439 - ATI + UFA / 427 - non-ATI + UFA",
-    "GN 439",
     "GP",
     "card ST03",
     "fungi"
