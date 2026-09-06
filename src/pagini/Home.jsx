@@ -75,6 +75,7 @@ function Home({ tabel }) {
         Caută
       </button>
 
+      <p>*Toate probele din pol se lucreaza difuzimetric!</p>
       <p>{rezultat}</p>
 
       <button className="switch-btn" onClick={() => navigate("/admin")}>
